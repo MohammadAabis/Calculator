@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="Calculator" FontWeight="Bold"  Background="CadetBlue" BorderThickness="15" BorderBrush="Aquamarine" Height="750" Width="900">
+        Title="Calculator" FontWeight="Bold"  Background="CadetBlue" BorderThickness="15" BorderBrush="Aquamarine" Height="750" Width="950">
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="410" VerticalAlignment="Top" Width="697" Margin="64,238,0,0">
+        <Grid HorizontalAlignment="Left" Height="410" VerticalAlignment="Top" Width="850" Margin="64,238,0,0">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"></ColumnDefinition>
                 <ColumnDefinition Width="170"></ColumnDefinition>
                 <ColumnDefinition Width="170"></ColumnDefinition>
                 <ColumnDefinition Width="170"></ColumnDefinition>
@@ -36,6 +37,7 @@
             <Button x:Name="btnPoint" Content="." HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" Height="98" Grid.Row="3" Grid.Column="1" FontSize="50" Click="bPoint_click"/>
             <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" Height="98" Grid.Row="3" Grid.Column="2" FontSize="50" Click="Equal" />
             <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" Height="98" Grid.Row="3" Grid.Column="3" FontSize="50" Click="Addition" />
+            <Button x:Name="btnDivide" Content="/" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" Height="98" Grid.Row="3" Grid.Column="4" FontSize="50" Click="Division" />
         </Grid>
         <TextBox x:Name="txtBox" HorizontalAlignment="Left" Height="108" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="680" Margin="64,121,0,0" />
 
