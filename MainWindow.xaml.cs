@@ -112,6 +112,7 @@ namespace Calculator
                 if (operation == Operation.Addition) finalValue = currentValue + otherValue;
                 else if (operation == Operation.Subtraction) finalValue = currentValue - otherValue;
                 else if (operation == Operation.Multiplication) finalValue = currentValue * otherValue;
+                else if (operation == Operation.Division) finalValue = currentValue / otherValue;
                 
                 if (finalValue != 0) txtBox.Text = finalValue.ToString();
                 finalValue = currentValue = otherValue = 0;
@@ -159,10 +160,11 @@ namespace Calculator
 
         }
 
-        
-
-
-
-       
+        private void Division(object sender, RoutedEventArgs e)
+        {
+            operation = Operation.Division;
+            if (currentValue == 0) currentValue = float.Parse(txtBox.Text);
+            txtBox.Clear();
+        }
     }
 }
